@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4385dfbf-58ac-4a34-a654-300ecd4dcd34" name="Changes" comment="add Taskss" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ru.TaskAtHand.taskathand-backend" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.ktor/ktor-server-core-jvm/2.3.0/48bf39d9ee2b4a1a4812d012643ecb0ceb5a961e/ktor-server-core-jvm-2.3.0-sources.jar!/jvmAndNixMain/io/ktor/server/application/ApplicationCallPipeline.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.ktor/ktor-server-core-jvm/2.3.0/48bf39d9ee2b4a1a4812d012643ecb0ceb5a961e/ktor-server-core-jvm-2.3.0-sources.jar!/jvmAndNixMain/io/ktor/server/request/ApplicationReceiveFunctions.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.ktor/ktor-server-core-jvm/2.3.0/48bf39d9ee2b4a1a4812d012643ecb0ceb5a961e/ktor-server-core-jvm-2.3.0-sources.jar!/jvmAndNixMain/io/ktor/server/response/ApplicationResponseFunctions.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed-core/0.37.3/f636fb0d52353c8f1c130c007f3177d1e0fc6c19/exposed-core-0.37.3-sources.jar!/org/jetbrains/exposed/sql/Queries.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed-core/0.37.3/f636fb0d52353c8f1c130c007f3177d1e0fc6c19/exposed-core-0.37.3-sources.jar!/org/jetbrains/exposed/sql/ResultRow.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.21/16a7151d48fb07d503c3c9e12e0656bbd56fd288/kotlin-stdlib-common-1.8.21-sources.jar!/generated/_Collections.kt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.gradle/wrapper/dists/gradle-7.5.1-bin/7jzzequgds1hbszbhq3npc5ng/gradle-7.5.1/lib/gradle-kotlin-dsl-7.5.1.jar!/org/gradle/kotlin/dsl/support/delegates/ProjectDelegate.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KotlinCodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2Psy8J32wf5DolAfjCKSTC1SnMK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lesuu/AndroidDev&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lesuu\AndroidDev\src\main\kotlin\ru\TaskAtHand\database" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lesuu\AndroidDev\src\main\kotlin\ru\TaskAtHand\features\tasks\models" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4385dfbf-58ac-4a34-a654-300ecd4dcd34" name="Changes" comment="" />
+      <created>1684259923808</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684259923808</updated>
+    </task>
+    <task id="LOCAL-00001" summary="inital">
+      <created>1684273504381</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684273504381</updated>
+    </task>
+    <task id="LOCAL-00002" summary=" add UsersModel">
+      <created>1684273658631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684273658631</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add Tasks">
+      <created>1684437872021</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684437872021</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inital" />
+    <MESSAGE value=" add UsersModel" />
+    <MESSAGE value="add Tasks" />
+    <MESSAGE value="add Taskss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Taskss" />
+  </component>
+</project>
