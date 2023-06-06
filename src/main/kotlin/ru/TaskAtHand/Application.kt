@@ -5,6 +5,7 @@ import io.ktor.server.cio.*
 import io.ktor.server.engine.*
 import org.jetbrains.exposed.sql.Database
 import ru.TaskAtHand.features.login.configureLoginRouting
+import ru.TaskAtHand.features.messager.configureMessageRouting
 import ru.TaskAtHand.features.tasks.configureTaskRouting
 import ru.TaskAtHand.plugins.configureMonitoring
 import ru.TaskAtHand.plugins.configureRouting
@@ -28,4 +29,5 @@ fun Application.module() {
     configureLoginRouting()
     configureTaskRouting()
     configureRouting()
+    configureMessageRouting()
 }
