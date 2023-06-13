@@ -33,13 +33,6 @@ fun Application.configureTaskRouting() {
             taskController.getUser()
         }
 
-
-
-        /*post("/tasks/getAllUsers") {
-            val taskController = TaskController(call)
-            taskController.getAllUsers()
-        }*/
-
         post("/tasks/getAllPrioritys") {
             val taskController = TaskController(call)
             taskController.getAllPrioritys()
