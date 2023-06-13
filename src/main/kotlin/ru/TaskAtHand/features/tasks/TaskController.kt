@@ -167,22 +167,25 @@ class TaskController(private val call: ApplicationCall) {
 
     suspend fun getAllUsers() {
         val taskDTOList = transaction {
-            val result = ArrayList<AllUsersResponce>()
+            val result = ArrayList<AllUsers>()
 
             val tasks = exec(
                 """
-                select * from users 
+                SELECT u.uid, u.number, u."password", u."name", u.status, r.post as role
+                FROM users u
+                JOIN "role" r ON r.uid = u."role"
+                ORDER BY u.role;
             """.trimIndent()
             ) { rs ->
                 while (rs.next()) {
-                    val userDTO = AllUsersResponce(
+                    val userDTO = AllUsers(
 
                         uid = rs.getInt("uid"),
                         number = rs.getString("number"),
                         password = rs.getString("password"),
                         name = rs.getString("name"),
                         status = rs.getString("status"),
-                        role = rs.getInt("role"),
+                        role = rs.getString("role"),
                     )
                     result.add(userDTO)
                 }
@@ -299,6 +302,57 @@ class TaskController(private val call: ApplicationCall) {
                     LIMIT 1
             """.trimIndent()
             )
+        }
+        call.respond(taskDTOList)
+    }
+
+    suspend fun getTaskCreator() {
+        val recive = call.receive<GetUser>()
+        val taskDTOList = transaction {
+            val result = ArrayList<TaskCreator>()
+
+            val tasks = exec(
+                """
+                select * from tasks where uid = ${recive.uid}
+            """.trimIndent()
+            ) { rs ->
+                while (rs.next()) {
+                    val userDTO = TaskCreator(
+                        creator = rs.getInt("creator"),
+                    )
+                    result.add(userDTO)
+                }
+            }
+            result
+        }
+        call.respond(taskDTOList)
+
+    }
+
+    suspend fun getUser() {
+        val recive = call.receive<GetUser>()
+        val taskDTOList = transaction {
+            val result = ArrayList<AllUsersResponce>()
+
+            val tasks = exec(
+                """
+                select * from users where uid = ${recive.uid}
+            """.trimIndent()
+            ) { rs ->
+                while (rs.next()) {
+                    val userDTO = AllUsersResponce(
+
+                        uid = rs.getInt("uid"),
+                        number = rs.getString("number"),
+                        password = rs.getString("password"),
+                        name = rs.getString("name"),
+                        status = rs.getString("status"),
+                        role = rs.getInt("role"),
+                    )
+                    result.add(userDTO)
+                }
+            }
+            result
         }
         call.respond(taskDTOList)
     }

@@ -49,6 +49,16 @@ data class CreateTaskResponse(
 )
 
 @Serializable
+data class GetUser(
+    val uid: Int
+)
+
+@Serializable
+data class TaskCreator(
+    val creator: Int
+)
+
+@Serializable
 data class EditTasksRequest(
     val uid: Int,
     val creator: String,
@@ -90,6 +100,16 @@ data class AllUsersResponce(
     val role: Int,
 )
 
+
+@Serializable
+data class AllUsers(
+    val uid: Int,
+    val number: String,
+    val password: String,
+    val name: String,
+    val status: String,
+    val role: String,
+)
 @Serializable
 data class AllPrioritysResponce(
     val uid: Int,

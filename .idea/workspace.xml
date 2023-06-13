@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4385dfbf-58ac-4a34-a654-300ecd4dcd34" name="Changes" comment="add Taskss">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/database/message/MessageDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/database/message/Messages.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/messager/MessageController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/messager/MessageRemote.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/messager/MessageRouting.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4385dfbf-58ac-4a34-a654-300ecd4dcd34" name="Changes" comment="add MessangerLogic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/messager/MessageController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/messager/MessageController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/messager/MessageRemote.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/messager/MessageRemote.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/tasks/TaskController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/tasks/TaskController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/tasks/TaskRouting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/tasks/TaskRouting.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/tasks/models/CreateTasksRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/TaskAtHand/features/tasks/models/CreateTasksRequest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "ktor.last.update.timestamp": "1686034721434",
+    "ktor.last.update.timestamp": "1686153963656",
     "last_opened_file_path": "C:/Users/lesuu/AndroidDev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,7 +108,8 @@
       <updated>1684259923808</updated>
       <workItem from="1685216481925" duration="43000" />
       <workItem from="1685216532915" duration="179000" />
-      <workItem from="1686034630530" duration="10515000" />
+      <workItem from="1686034630530" duration="10683000" />
+      <workItem from="1686127924149" duration="11031000" />
     </task>
     <task id="LOCAL-00001" summary="inital">
       <created>1684273504381</created>
@@ -133,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684437872021</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add MessangerLogic">
+      <created>1686095208505</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686095208505</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +161,7 @@
     <MESSAGE value=" add UsersModel" />
     <MESSAGE value="add Tasks" />
     <MESSAGE value="add Taskss" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Taskss" />
+    <MESSAGE value="add MessangerLogic" />
+    <option name="LAST_COMMIT_MESSAGE" value="add MessangerLogic" />
   </component>
 </project>

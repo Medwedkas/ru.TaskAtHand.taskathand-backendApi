@@ -35,13 +35,22 @@ class MessageController(private val call: ApplicationCall) {
             val result = ArrayList<GetChatListResponce>()
             val chats = exec(
                 """
-                SELECT m.receiver_id, u.name, r.post, MAX(m."timestamp") AS last_timestamp, MAX(m.message) AS last_message
-                FROM messages m
-                LEFT JOIN users u ON m.receiver_id = u.uid
-                LEFT JOIN "role" r ON r.uid = u.uid
-                WHERE m.sender_id = ${recive.uid}
-                GROUP BY m.receiver_id, u.name, r.post
-                ORDER BY m.receiver_id 
+                SELECT u.uid AS receiver_id, u.name, r.post, MAX(m."timestamp") AS last_timestamp, MAX(m.message) AS last_message
+                FROM (
+                  SELECT sender_id AS user_id
+                  FROM messages
+                  WHERE receiver_id = ${recive.uid}
+                  
+                  UNION
+                  
+                  SELECT receiver_id AS user_id
+                  FROM messages
+                  WHERE sender_id = ${recive.uid}
+                ) AS users
+                LEFT JOIN users u ON u.uid = users.user_id
+                LEFT JOIN "role" r ON r.uid = u."role"
+                LEFT JOIN messages m ON (m.sender_id = users.user_id OR m.receiver_id = users.user_id)
+                GROUP BY u.uid, u.name, r.post;
             """.trimIndent()
             ) { rs ->
                 while (rs.next()) {
@@ -66,15 +75,18 @@ class MessageController(private val call: ApplicationCall) {
             val result = ArrayList<GetMessagesResponce>()
             val messages = exec(
                 """
-            SELECT "timestamp", message
+            SELECT "timestamp", message, receiver_id, sender_id
             FROM messages
-            WHERE sender_id = ${recive.sender_id} AND receiver_id = ${recive.receiver_id}
+            WHERE (sender_id = ${recive.sender_id} AND receiver_id = ${recive.receiver_id}) OR (sender_id = ${recive.receiver_id} AND receiver_id = ${recive.sender_id})
+            ORDER BY "timestamp"
             """.trimIndent()
             ) { rs ->
                 while (rs.next()) {
                     val timestamp = rs.getString("timestamp")
                     val message = rs.getString("message")
-                    val chat = GetMessagesResponce(timestamp, message)
+                    val receiver_id = rs.getInt("receiver_id")
+                    val sender_id = rs.getInt("sender_id")
+                    val chat = GetMessagesResponce(timestamp, message, sender_id, receiver_id)
                     result.add(chat)
                 }
             }

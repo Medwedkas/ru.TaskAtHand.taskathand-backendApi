@@ -28,6 +28,13 @@ fun Application.configureTaskRouting() {
             taskController.getAllUsers()
         }
 
+        post("/getUser") {
+            val taskController = TaskController(call)
+            taskController.getUser()
+        }
+
+
+
         /*post("/tasks/getAllUsers") {
             val taskController = TaskController(call)
             taskController.getAllUsers()
@@ -46,6 +53,11 @@ fun Application.configureTaskRouting() {
         post("/tasks/getAllTasksStatus") {
             val taskController = TaskController(call)
             taskController.getAllTasksStatus()
+        }
+
+        post("/tasks/getTaskCreator") {
+            val taskController = TaskController(call)
+            taskController.getTaskCreator()
         }
 
         post("/tasks/createTask") {

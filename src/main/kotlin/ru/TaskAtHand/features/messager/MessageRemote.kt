@@ -32,6 +32,8 @@ data class GetChatListResponce(
 @Serializable
 data class GetMessagesResponce(
     val timestamp:String,
-    val message: String
+    val message: String,
+    val sender_id: Int,
+    val receiver_id: Int
 )
 
